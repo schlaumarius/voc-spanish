@@ -1,0 +1,104 @@
+/* Der root-Container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Beginne den Inhalt oben */
+  min-height: 100vh; /* Verwende die gesamte Höhe des Viewports */
+}
+
+/* Zentriere den Inhalt horizontal, aber platziere ihn weiter oben */
+.app-container {
+  text-align: center;
+  margin: 0 auto; /* Horizontal mittig */
+  max-width: 500px;
+  padding: 30px;
+  padding-top: 0; /* Entferne unnötiges Padding von oben */
+}
+
+/* Kleinere Überschrift und direkt oben platziert */
+/* Erhöhe den Abstand zwischen der Überschrift und den Vokabeln */
+.app-title {
+  font-size: 24px;
+  margin-bottom: 110px; /* Mehr Abstand nach unten */
+}
+
+/* Stil für die angezeigten Vokabeln */
+.vocab-display {
+  font-size: 20px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center; /* Zentriere den Text und die Flaggen vertikal */
+  justify-content: center; /* Zentriere alles horizontal */
+}
+
+/* Flaggen-Icons */
+.flag {
+  width: 24px; /* Breite der Flagge */
+  height: auto;
+  margin-right: 10px; /* Abstand zwischen Flagge und Text */
+}
+
+/* Restliche Styles bleiben unverändert */
+
+
+/* Verstecke den Button, wenn die Lösung angezeigt wird */
+.solution-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 20px auto; /* Horizontal zentriert */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block; /* Stellt sicher, dass der Button als Block angezeigt wird */
+}
+
+/* Verstecke den Button, wenn deaktiviert */
+.solution-button:disabled {
+  display: none;
+}
+
+/* Container für die Aktions-Buttons */
+.action-buttons {
+  margin-top: 20px;
+}
+
+/* Grüner Button für "Korrekt" */
+.correct-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Roter Button für "Falsch" */
+.incorrect-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Flaggen-Icons */
+.flag {
+  width: 24px; /* Breite der Flagge */
+  height: auto;
+  margin-right: 10px; /* Abstand zwischen Flagge und Text */
+}
+
+/* Hover-Effekte für die Buttons */
+.correct-button:hover,
+.incorrect-button:hover,
+.solution-button:hover {
+  opacity: 0.9;
+}
