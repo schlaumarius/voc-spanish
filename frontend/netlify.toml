@@ -1,4 +1,4 @@
 [build]
   base    = "frontend"   # Ordner, in dem sich dein Frontend befindet
-  publish = "frontend/dist"  # Verzeichnis, das veröffentlicht wird
+  publish = "frontend/src/dist"  # Verzeichnis, das veröffentlicht wird
   command = "npm run build"  # Befehl, um den Build zu starten
