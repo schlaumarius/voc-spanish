@@ -16,6 +16,6 @@ export default defineConfig({
     },
   ],
   build: {
-    outDir: 'frontend/dist',  // Set the correct output directory
+    outDir: 'dist',  // Set the correct output directory
   },
 });
