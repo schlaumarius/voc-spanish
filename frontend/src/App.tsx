@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import IVocab from "./interfaces/IVocab";
-import { VocabLoader } from "./VocabLoader"; // Importiere den VocabLoader
+import { VocabLoader } from "./VocabLoader";
 import "./App.css"; // Importiere das CSS
 
 const App = () => {
